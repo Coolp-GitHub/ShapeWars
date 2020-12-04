@@ -21,10 +21,7 @@ public class BulletSpawnngSquare : MonoBehaviour
             StartCoroutine(WaitCooldown());
 
         }
-        else
-        {
-            return;
-        }
+        
 
     }
 
