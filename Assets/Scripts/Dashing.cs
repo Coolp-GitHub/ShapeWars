@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementDashing : MonoBehaviour
+public class Dashing : MonoBehaviour
 {
     public float speed = 5f;
     public float dashForce = 20f;
@@ -25,11 +25,11 @@ public class MovementDashing : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && canDash)
         {
-         rb.AddForce(dashForce * Diamond.up, ForceMode2D.Impulse);
-         canDash = false;
-         StartCoroutine(WaitCooldown());
+            rb.AddForce(dashForce * Diamond.up, ForceMode2D.Impulse);
+            canDash = false;
+            StartCoroutine(WaitCooldown());
         }
-        
+
     }
 
     void FixedUpdate()
