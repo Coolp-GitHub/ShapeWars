@@ -11,6 +11,7 @@ public class BulletSpawnngSquare : MonoBehaviour
 
     public float bulletForce = 20f;
     public float coolDown = 0.2f;
+    public float dmg;
     bool canShoot = true;
 
     void Update()

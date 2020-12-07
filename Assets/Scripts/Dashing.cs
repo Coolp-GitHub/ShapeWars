@@ -7,6 +7,7 @@ public class Dashing : MonoBehaviour
     public float speed = 5f;
     public float dashForce = 20f;
     public float coolDown = 0.5f;
+    public float dmg;
     bool canDash = true;
 
     public Camera cam;
